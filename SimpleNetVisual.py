@@ -2,13 +2,14 @@ import matplotlib
 from mpl_toolkits import mplot3d
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.widgets import Slider, Button, RadioButtons
 import visual_functions as vf
 
 # w = np.array([1,2,2,1,-1,2]) 
 # w = np.array([1,2,-2,6,1,1]) use this weight vector for some fun 
 # results
 # weight vector
-w = np.array([1,1,2,1,-5,2]) 
+w = np.array([1,1,2,1,-5,2])
 
 # Input point and space generation
 x = np.linspace(-6, 6, 30)
@@ -36,6 +37,7 @@ ax.plot_surface(X, Y, truth, rstride=1, cstride=1,
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
+
 
 # subplot 2
 ax1 = fig.add_subplot(1, 2, 2, projection='3d')
