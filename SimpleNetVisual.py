@@ -2,6 +2,7 @@ import matplotlib
 from mpl_toolkits import mplot3d
 import numpy as np
 import matplotlib.pyplot as plt
+import torch
 from matplotlib.widgets import Slider, Button, RadioButtons
 import visual_functions as vf
 
